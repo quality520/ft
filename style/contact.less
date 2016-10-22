@@ -39,6 +39,7 @@
     font-size:0;
     div.content-left{
       display:inline-block;
+      vertical-align:top;
       width:45%;
       //background:red;
       div.content-form{
@@ -86,11 +87,108 @@
           color:#fff;
         }
       }
+      div.content-map{
+        width:80%;
+        margin:40px 10%;
+        img{
+          width:100%;
+          height:auto;
+        }
+      }
     }
     div.content-right{
       display:inline-block;
+      vertical-align:top;
       width:55%;
-      background:green;
+      //background:green;
+      font-size:14px;
+      div.card-view{
+        width:80%;
+        height:auto;
+        margin:0 10%;
+        padding:15px;
+        box-sizing:border-box;
+        background:#f9f9f9 url('../images/call-list-main.png') no-repeat right bottom;
+        p{
+          margin:0;
+          padding:0;
+        }
+        p.tit{
+          position:relative;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 40px;
+          span{
+            font-size:14px;
+          }
+          &:after{
+            content:'';
+            position:absolute;
+            bottom:0;
+            left:0;
+            display:inline-block;
+            width:40px;
+            height:2px;
+            background:#0560a9;
+          }
+        }
+        p.txt{
+          line-height:35px;
+        }
+      }
+
+      div.card-list{
+        width:80%;
+        height:auto;
+        margin:30px 10%;
+        //padding:15px;
+        box-sizing:border-box;
+        background:#fff url('../images/call-list.png') no-repeat center center;
+        background-size:100% auto;
+        ul{
+          width:100%;
+          height:auto;
+          font-size:0;
+          li{
+            display:inline-block;
+            width:48%;
+            margin-bottom:30px;
+            padding:0 15px;
+            box-sizing:border-box;
+            font-size:14px;
+            background:#eee;
+            p{
+              margin:0;
+              padding:0;
+            }
+            p.tit{
+              position:relative;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 40px;
+              span{
+                font-size:14px;
+              }
+              &:after{
+                content:'';
+                position:absolute;
+                bottom:0;
+                left:0;
+                display:inline-block;
+                width:40px;
+                height:2px;
+                background:#0560a9;
+              }
+            }
+            p.txt{
+              line-height:35px;
+            }
+          }
+          li:nth-of-type(odd){
+            margin-right:4%;
+          }
+        }
+      }
     }
   }
 
