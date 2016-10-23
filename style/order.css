@@ -1,0 +1,286 @@
+html,
+body,
+div,
+ul,
+li,
+a,
+ol,
+span,
+i,
+em,
+strong,
+article {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html,
+body {
+  font-size: 16px;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+/* header */
+div.header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  min-width: 1000px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+div.header .header-content {
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+  font-size: 0;
+}
+div.header div.logo {
+  display: inline-block;
+  width: 30%;
+  height: 80px;
+  vertical-align: middle;
+}
+div.header div.nav {
+  display: inline-block;
+  width: 70%;
+  height: 80px;
+  vertical-align: middle;
+  text-align: right;
+}
+div.header div.nav ul.nav-up {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 0;
+}
+div.header div.nav ul.nav-up li {
+  display: inline-block;
+  width: 120px;
+  font-size: 12px;
+}
+div.header div.nav ul.nav-down {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 0;
+}
+div.header div.nav ul.nav-down li.nav-level-first {
+  display: inline-block;
+  width: 120px;
+  font-size: 16px;
+}
+div.header div.nav ul.nav-down li.nav-level-first a.nav-level-link {
+  width: 100%;
+  position: relative;
+}
+div.header div.nav ul.nav-down li.nav-level-first a.nav-level-link:hover:after,
+div.header div.nav ul.nav-down li.nav-level-first a.nav-level-link:active:after,
+div.header div.nav ul.nav-down li.nav-level-first a.nav-level-link:visited:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: blue;
+}
+div.header div.nav ul.nav-down li.nav-level-first div.nav-level-list {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  min-width: 1000px;
+  height: 35px;
+  font-size: 0;
+  background: #2f2e2e;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+div.header div.nav ul.nav-down li.nav-level-first div.nav-level-list ul {
+  width: 1000px;
+  margin: 0 auto;
+}
+div.header div.nav ul.nav-down li.nav-level-first div.nav-level-list li.nav-level-second {
+  display: inline-block;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+div.header div.nav ul.nav-down li.nav-level-first div.nav-level-list li.nav-level-second a {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+}
+div.header div.nav ul.nav-down li.nav-level-first div.nav-level-list li.nav-level-second:hover,
+div.header div.nav ul.nav-down li.nav-level-first div.nav-level-list li.active {
+  background: #0560a9;
+}
+.footer {
+  width: 100%;
+  min-width: 1000px;
+  height: 306px;
+  background: #2f2e2e;
+}
+.footer div.footer-content {
+  width: 866px;
+  height: 306px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.footer div.footer-content div.footer-left,
+.footer div.footer-content div.footer-right {
+  display: inline-block;
+  height: inherit;
+  padding-top: 56px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.footer div.footer-content div.footer-left {
+  width: 62%;
+}
+.footer div.footer-content div.footer-left ul.footer-com {
+  display: inline-block;
+  width: 30%;
+  height: 197px;
+}
+.footer div.footer-content div.footer-left ul.footer-com li {
+  width: 100%;
+  line-height: 30px;
+  font-size: 12px;
+  text-indent: 10px;
+  color: #fff;
+}
+.footer div.footer-content div.footer-left ul.footer-com li:first-child {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.footer div.footer-content div.footer-left p.footer-copyright {
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+  text-indent: 10px;
+}
+.footer div.footer-content div.footer-right {
+  width: 38%;
+}
+.footer div.footer-content div.footer-right div.footer-solagan img {
+  height: 33px;
+}
+.footer div.footer-content div.footer-right div.footer-share {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+}
+.footer div.footer-content div.footer-right div.footer-qrcon img,
+.footer div.footer-content div.footer-right div.footer-qrcon span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer div.footer-content div.footer-right div.footer-qrcon span {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  position: relative;
+  width: 100%;
+  min-width: 1000px;
+  margin-top: 80px;
+}
+.content div.content-banner {
+  width: inherit;
+  height: auto;
+}
+.content div.content-banner img {
+  width: 100%;
+}
+.content div.content-title {
+  width: 100%;
+  height: 70px;
+  background: #ececed url('../images/triangle-bg.png') no-repeat center center;
+  background-size: 100% auto;
+  margin: 0 auto 0;
+}
+.content div.content-title div.tit {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 70px;
+}
+.content div.content-main {
+  width: 1000px;
+  margin: 50px auto;
+  font-size: 0;
+}
+.content div.content-main div.main-left,
+.content div.content-main div.main-right {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.content div.content-main div.main-left {
+  width: 30%;
+  height: auto;
+  font-size: 18px;
+  color: #0560a9;
+}
+.content div.content-main div.main-left .active {
+  color: #333;
+}
+.content div.content-main div.main-left ul {
+  width: 100%;
+  text-align: center;
+}
+.content div.content-main div.main-left ul li {
+  line-height: 50px;
+}
+.content div.content-main div.main-right {
+  width: 65%;
+  height: auto;
+  text-align: center;
+}
+.content div.content-main div.main-right p.tit {
+  height: 60px;
+  font-size: 30px;
+  background: url('../images/order-line.png') no-repeat center bottom;
+}
+.content div.content-main div.main-right div.box {
+  width: 100%;
+}
+.content div.content-main div.main-right div.box p.txt-white,
+.content div.content-main div.main-right div.box p.txt-green {
+  display: inline-block;
+  width: 546px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+}
+.content div.content-main div.main-right div.box p.txt-white {
+  color: #71b112;
+  border: 2px solid #71b112;
+}
+.content div.content-main div.main-right div.box p.txt-green {
+  color: #fff;
+  border: 2px solid #71b112;
+  background: #71b112;
+}
+.content div.content-main div.main-right div.box p.arrow {
+  margin: 20px 0;
+}
