@@ -1,0 +1,91 @@
+@import "main.less";
+p{
+  margin:0;
+  padding:0;
+}
+.content {
+  position: relative;
+  width: 100%;
+  min-width: 1000px;
+  margin-top: 80px;
+  div.content-banner {
+    width: inherit;
+    height: auto;
+    img {
+      width: 100%;
+    }
+  }
+  div.content-title{
+    width:100%;
+    height:70px;
+    background:#ececed url('../images/triangle-bg.png') no-repeat center center;
+    background-size:100% auto;
+    margin:0 auto 30px;
+    div.tit{
+      width:1000px;
+      margin:0 auto;
+      font-size:30px;
+      line-height: 70px;
+    }
+  }
+  div.content-product {
+    width: 1000px;
+    margin: 50px auto;
+    height: auto;
+    font-size: 0;
+
+    div.content-product-images, div.content-product-name {
+      display: inline-block;
+      vertical-align: top;
+    }
+    div.content-product-images {
+      width: 40%;
+      height: auto;
+      //overhidden:hidden;
+      .images-big {
+        width: 100%;
+      }
+      ul {
+        width: 100%;
+        height: auto;
+        font-size: 0;
+        li {
+          display: inline-block;
+          width: 32%;
+        }
+        li:nth-child(2) {
+          margin: 2%;
+        }
+      }
+    }
+    div.content-product-name {
+      width: 50%;
+      margin: 0 5%;
+      height: auto;
+
+      p.tit {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+      p.tip {
+        position: relative;
+        font-size: 18px;
+        margin-bottom: 30px;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          display: inline-block;
+          width: 35px;
+          height: 2px;
+          background: #0560a9;
+        }
+      }
+      p.txt {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
+}
