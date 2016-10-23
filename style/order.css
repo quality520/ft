@@ -257,6 +257,7 @@ p {
 .content div.content-main div.main-right p.tit {
   height: 60px;
   font-size: 30px;
+  margin-bottom: 20px;
   background: url('../images/order-line.png') no-repeat center bottom;
 }
 .content div.content-main div.main-right div.box {

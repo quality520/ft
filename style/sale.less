@@ -90,24 +90,68 @@ p{
 		width:1000px;
 		margin:0 auto;
 		font-size:0;
-		div.main-detail{
+		div.main-detail-1,div.main-detail-2,div.main-detail-3,div.main-detail-4{
 			width:1000px;
 			font-size:0;
+			padding:60px 0;
+			border-bottom:1px solid #eee;
 			div.text,div.left-img{
 				display:inline-block;
 				vertical-align:middle;
-				font-size:0;
+				font-size:16px;
 			}
 			div.text{
-				width:60%
+				width:60%;
 				p.tit{
-
+					height: 60px;
+			    line-height: 60px;
+			    font-size: 24px;
+			    text-indent: 70px;
+					background:url('../images/sale-icon-1-small.png') no-repeat left center;
+					background-size:auto 100%;
+				}
+				p.txt{
+					line-height:30px;
 				}
 			}
 			div.left-img{
-				width:40%;
+				width:30%;
+				img{
+					width:100%;
+				}
+			}
+		}
+		div.main-detail-2{
+			div.text{
+				margin-left:10%;
+				p.tit{
+					background:url('../images/sale-icon-2-small.png') no-repeat left center;
+					background-size:auto 100%;
+				}
+			}
+		}
+		div.main-detail-3{
+			div.text{
+				p.tit{
+					background:url('../images/sale-icon-3-small.png') no-repeat left center;
+				}
+			}
+		}
+		div.main-detail-4{
+			border-bottom:none;
+			div.text{
+				margin-left:10%;
+				p.tit{
+					background:url('../images/sale-icon-4-small.png') no-repeat left center;
+					background-size:auto 100%;
+				}
 			}
 		}
 	}
-
+	div.content-solgan{
+		width:1000px;
+		margin:100px auto;
+		text-align:center;
+		font-size:24px;
+	}
 }
